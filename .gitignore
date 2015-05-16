@@ -1,0 +1,10 @@
+*.cache
+*.node-gyp
+*.npm
+*.scssc
+.DS_Store
+.sass-cache
+.bash_history
+.bowerrc
+node_modules
+npm-debug.log

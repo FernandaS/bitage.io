@@ -1,0 +1,20 @@
+{
+  "name": "bitage.io",
+  "version": "0.0.0",
+  "homepage": "https://github.com/leongaban/bitage.io",
+  "authors": [
+    "Leon Gaban <leongaban@gmail.com>"
+  ],
+  "description": "Bitcoin account watcher",
+  "keywords": [
+    "Bitcoin"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
