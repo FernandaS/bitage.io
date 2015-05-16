@@ -1,6 +1,6 @@
 {
   "name": "bitage.io",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/leongaban/bitage.io",
   "authors": [
     "Leon Gaban <leongaban@gmail.com>"
@@ -16,5 +16,39 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "angular": "~1.4.x",
+    "sass-smacss": "~0.1.1",
+    "es6-shim": "~0.30.0"
+  },
+  "install": {
+    "path": "libs",
+    "sources": {
+      "angular": [
+        "bower_components/angular/angular.min.js",
+        "bower_components/angular/angular.min.js.map"
+      ],
+      "angular-route": [
+        "bower_components/angular-route/angular-route.min.js",
+        "bower_components/angular-route/angular-route.min.js.map"
+      ],
+      "angular-animate": [
+        "bower_components/angular-animate/angular-animate.min.js",
+        "bower_components/angular-animate/angular-animate.min.js.map"
+      ],
+      "angular-sanitize": [
+        "bower_components/angular-sanitize/angular-sanitize.min.js",
+        "bower_components/angular-sanitize/angular-sanitize.min.js.map"
+      ],
+      "angular-scroll": [
+        "bower_components/angular-scroll/angular-scroll.min.js",
+        "bower_components/angular-scroll/angular-scroll.min.js.map"
+      ],
+      "es6-shim": [
+        "bower_components/es6-shim/es6-shim.min.js",
+        "bower_components/es6-shim/es6-shim.map"
+      ]
+    }
+  }
 }
