@@ -30,7 +30,6 @@ gulp.task('js', function() {
 
 gulp.task('css-material', function() {
     return sass('bower_components/materialize/sass/materialize.scss', {
-            // noCache: true,
             style: 'compressed' 
         })
         .pipe(sourcemaps.init())
@@ -40,7 +39,6 @@ gulp.task('css-material', function() {
 
 gulp.task('css-bitage', function() {
     return sass('bower_components/sass-smacss/sass/bitage.scss', {
-            // noCache: true,
             style: 'compressed' 
         })
         .pipe(sourcemaps.init())
@@ -53,20 +51,20 @@ gulp.task('watch', function() {
         gutil.log(gutil.colors.green('HTML updated' + ' (' + file.path + ')'));
     });
 
-    gulp.watch('app/**/*.html').on('change', function(file) {
-        gutil.log(gutil.colors.green('HTML updated' + ' (' + file.path + ')'));
-    });
+    // gulp.watch('app/**/*.html').on('change', function(file) {
+    //     gutil.log(gutil.colors.green('HTML updated' + ' (' + file.path + ')'));
+    // });
 
-    gulp.watch('app/**/**/*.html').on('change', function(file) {
-        gutil.log(gutil.colors.green('HTML updated' + ' (' + file.path + ')'));
-    });
+    // gulp.watch('app/**/**/*.html').on('change', function(file) {
+    //     gutil.log(gutil.colors.green('HTML updated' + ' (' + file.path + ')'));
+    // });
+
+    // gulp.watch('bower_components/materialize/sass/materialize.scss', ['css-material']).on('change', function(file) {
+    //     gutil.log(gutil.colors.cyan('CSS Materialize updated' + ' (' + file.path + ')'));
+    // });
 
     gulp.watch('app/assets/imgs/*.svg').on('change', function(file) {
         gutil.log(gutil.colors.magenta('SVG updated' + ' (' + file.path + ')'));
-    });
-
-    gulp.watch('bower_components/materialize/sass/materialize.scss', ['css-material']).on('change', function(file) {
-        gutil.log(gutil.colors.cyan('CSS Materialize updated' + ' (' + file.path + ')'));
     });
 
     gulp.watch('bower_components/sass-smacss/sass/**/*.scss', ['css-bitage']).on('change', function(file) {
