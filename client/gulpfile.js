@@ -47,17 +47,10 @@ gulp.task('css-bitage', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('app/*.html').on('change', function(file) {
+
+    gulp.watch('app/**/**/*.html').on('change', function(file) {
         gutil.log(gutil.colors.green('HTML updated' + ' (' + file.path + ')'));
     });
-
-    // gulp.watch('app/**/*.html').on('change', function(file) {
-    //     gutil.log(gutil.colors.green('HTML updated' + ' (' + file.path + ')'));
-    // });
-
-    // gulp.watch('app/**/**/*.html').on('change', function(file) {
-    //     gutil.log(gutil.colors.green('HTML updated' + ' (' + file.path + ')'));
-    // });
 
     // gulp.watch('bower_components/materialize/sass/materialize.scss', ['css-material']).on('change', function(file) {
     //     gutil.log(gutil.colors.cyan('CSS Materialize updated' + ' (' + file.path + ')'));
